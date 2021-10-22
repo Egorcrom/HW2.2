@@ -16,16 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="535-Qs-tc7">
-                                <rect key="frame" x="20" y="64" width="374" height="530"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="535-Qs-tc7">
+                                <rect key="frame" x="20" y="64" width="786" height="630"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E89-7S-fuo">
-                                <rect key="frame" x="18" y="734" width="378" height="106"/>
+                                <rect key="frame" x="18" y="734" width="790" height="106"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="WYa-Hz-Jnm">
-                                        <rect key="frame" x="0.0" y="0.0" width="378" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hec-8h-cCV">
                                                 <rect key="frame" x="0.0" y="0.0" width="29.5" height="30"/>
@@ -40,16 +39,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RDx-Cr-RxJ">
-                                                <rect key="frame" x="68.5" y="0.0" width="311.5" height="31"/>
+                                                <rect key="frame" x="68.5" y="0.0" width="331.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
                                                     <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="e0R-4i-Yso"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="398" id="MzE-ST-snx"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3h8-cF-sAM">
-                                        <rect key="frame" x="0.0" y="38" width="378" height="30"/>
+                                        <rect key="frame" x="0.0" y="38" width="406" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGe-hQ-iym">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
@@ -64,16 +66,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-g9-hRz">
-                                                <rect key="frame" x="70" y="0.0" width="310" height="31"/>
+                                                <rect key="frame" x="70" y="0.0" width="338" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
                                                     <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Azx-8O-luf"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="406" id="BFD-fK-sfa"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mZR-Ta-ArX">
-                                        <rect key="frame" x="0.0" y="76" width="378" height="30"/>
+                                        <rect key="frame" x="0.0" y="76" width="790" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz5-hc-sab">
                                                 <rect key="frame" x="0.0" y="0.0" width="32.5" height="30"/>
@@ -88,26 +93,30 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mdw-d4-RV5">
-                                                <rect key="frame" x="69.5" y="0.0" width="310.5" height="31"/>
+                                                <rect key="frame" x="69.5" y="0.0" width="722.5" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <connections>
                                                     <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="S70-bH-dgx"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="410" id="RG4-ZS-xmO"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="378" id="84N-SP-72B"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="E89-7S-fuo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="KFB-7q-qGp"/>
-                            <constraint firstAttribute="trailing" secondItem="E89-7S-fuo" secondAttribute="trailing" constant="18" id="Qk2-uk-NTd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E89-7S-fuo" secondAttribute="bottom" constant="22" id="ed6-Av-DZg"/>
+                            <constraint firstItem="535-Qs-tc7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2W7-Ho-fWO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="535-Qs-tc7" secondAttribute="trailing" constant="20" id="JLn-Hl-72l"/>
+                            <constraint firstItem="535-Qs-tc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TtU-UD-Tsq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E89-7S-fuo" secondAttribute="bottom" constant="22" id="nRL-om-vXn"/>
+                            <constraint firstItem="E89-7S-fuo" firstAttribute="top" secondItem="535-Qs-tc7" secondAttribute="bottom" constant="40" id="qYg-ct-M3F"/>
+                            <constraint firstItem="E89-7S-fuo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="tj7-nO-h9m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E89-7S-fuo" secondAttribute="trailing" constant="18" id="wVZ-Uy-fFp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -134,6 +143,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
